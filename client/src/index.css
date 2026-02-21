@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=IM+Fell+English:ital@0;1&display=swap');
+
+/* ─── Reset & Base ─── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Lightened aged-paper palette */
+  --bg: #d5cdbc;
+  --bg2: #c9bfa8;
+  --paper: #e3dac5;
+  --ink: #1a1208;
+  --ink2: #352a1a;
+  --muted: #6b5c45;
+  --border: rgba(60, 40, 10, 0.15);
+  --border2: rgba(60, 40, 10, 0.25);
+
+  /* Category accents */
+  --c1: #1a5f8e;
+  --c5: #1e5e38;
+  --c10: #7a2040;
+  --c20: #4a2880;
+  --ca: #8a4400;
+
+  --radius: 14px;
+  --transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ─── Paper Texture Background ─── */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  background-image:
+    /* Dotted grid — horizontal dots every 28px rows, 18px cols */
+    radial-gradient(circle, rgba(40, 25, 5, 0.28) 1px, transparent 1px),
+    /* Heavy paper grain noise */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='5' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='250' height='250' filter='url(%23n)' opacity='0.18'/%3E%3C/svg%3E"),
+    /* Second coarser grain pass */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n2'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.35' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n2)' opacity='0.09'/%3E%3C/svg%3E");
+  background-size: 18px 28px, 250px 250px, 180px 180px;
+  color: var(--ink);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Deep vignette to darken edges like aged paper */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  box-shadow: inset 0 0 160px rgba(40, 20, 0, 0.35);
+}
+
+/* ─── Layout ─── */
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+.app-wrapper {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+/* ─── Tab Bar ─── */
+.tab-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 32px 0 0;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 1px solid var(--border2);
+  border-radius: 50px;
+  color: var(--muted);
+  font-family: 'IM Fell English', serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: italic;
+  padding: 8px 20px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: background var(--transition), color var(--transition),
+    border-color var(--transition), transform var(--transition);
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  background: rgba(90, 60, 20, 0.06);
+  color: var(--ink2);
+  transform: translateY(-1px);
+}
+
+.tab-btn--active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ─── Page Title Header ─── */
+.page-header {
+  text-align: center;
+  padding: 44px 0 36px;
+}
+
+.page-title {
+  font-family: 'IM Fell English', serif;
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.05;
+  color: var(--ink);
+  position: relative;
+  display: inline-block;
+  animation: titleFade 0.35s ease;
+}
+
+/* Ink underline accent */
+.page-title::after {
+  content: '';
+  display: block;
+  margin: 10px auto 0;
+  width: 48px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--accent);
+  animation: titleFade 0.5s ease;
+}
+
+@keyframes titleFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Single Category Panel ─── */
+.single-category {
+  animation: panelFade 0.28s ease;
+}
+
+@keyframes panelFade {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Category Card (Flattened into Paper) ─── */
+.category-card {
+  padding: 0;
+  position: relative;
+  transition: transform var(--transition);
+}
+
+/* Removed individual accent stripe for a cleaner flat look, or kept subtle? User said remove box. */
+.category-card::before {
+  display: none;
+}
+
+/* Removed card-specific noise - using body noise only */
+.category-card::after {
+  display: none;
+}
+
+.category-card:hover {
+  transform: translateY(-3px);
+}
+
+/* ─── Card Header ─── */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.card-count {
+  background: rgba(90, 60, 20, 0.07);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 3px 13px;
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+/* ─── Goal List ─── */
+.goal-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 60px;
+  margin-bottom: 20px;
+}
+
+.goal-empty {
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-style: italic;
+  padding: 20px 0;
+  text-align: center;
+  border: 1px dashed var(--border2);
+  border-radius: 10px;
+}
+
+/* ─── Goal Item ─── */
+.goal-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  transition: transform var(--transition);
+  animation: slideIn 0.28s ease;
+}
+
+.goal-item:last-child {
+  border-bottom: none;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.goal-item:hover {
+  transform: translateY(-1px);
+}
+
+.goal-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ink2);
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.goal-text {
+  flex: 1;
+  font-family: 'IM Fell English', serif;
+  font-size: 1.45rem;
+  line-height: 1.3;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+/* Edit button in card header */
+.edit-toggle-btn,
+.add-inline-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--muted);
+  font-family: 'IM Fell English', serif;
+  font-size: 0.75rem;
+  font-style: italic;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.edit-toggle-btn:hover,
+.add-inline-btn:hover {
+  background: rgba(90, 60, 20, 0.08);
+  color: var(--ink);
+  border-color: var(--border2);
+}
+
+.edit-toggle-btn.active {
+  background: var(--ink2);
+  color: #fff;
+  border-color: var(--ink2);
+}
+
+.goal-delete {
+  background: none;
+  border: none;
+  color: rgba(90, 60, 20, 0.25);
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0 2px;
+  transition: color var(--transition);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.goal-delete:hover {
+  color: #b91c1c;
+}
+
+/* Removed standalone add-btn styles */
+
+.add-btn-icon {
+  font-size: 1rem;
+}
+
+/* ─── Modal Overlay ─── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(42, 33, 24, 0.45);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+  animation: fadeOverlay 0.2s ease;
+}
+
+@keyframes fadeOverlay {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* ─── Modal Box ─── */
+.modal {
+  background: var(--paper);
+  border: 1px solid var(--border2);
+  border-radius: 16px;
+  padding: 36px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 8px 48px rgba(42, 33, 24, 0.2), 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+  animation: modalPop 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes modalPop {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(90, 60, 20, 0.07);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  color: var(--muted);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  background: rgba(90, 60, 20, 0.12);
+  color: var(--ink);
+}
+
+.modal-tag {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.modal-title {
+  font-family: 'IM Fell English', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ink);
+  margin-bottom: 22px;
+}
+
+.modal-textarea {
+  width: 100%;
+  background: rgba(90, 60, 20, 0.03);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 14px 16px;
+  resize: vertical;
+  min-height: 110px;
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.modal-textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  justify-content: flex-end;
+}
+
+.btn-cancel {
+  background: transparent;
+  border: 1px solid var(--border2);
+  border-radius: 9px;
+  color: var(--muted);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+
+.btn-cancel:hover {
+  background: rgba(90, 60, 20, 0.06);
+  color: var(--ink2);
+}
+
+.btn-save {
+  background: var(--accent);
+  border: none;
+  border-radius: 9px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 10px 28px;
+  cursor: pointer;
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+.btn-save:hover {
+  opacity: 0.87;
+  transform: translateY(-1px);
+}
+
+.btn-save:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ─── Loading Spinner ─── */
+.spinner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 80px 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.spinner {
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--border2);
+  border-top-color: var(--ink2);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 60, 20, 0.18);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(90, 60, 20, 0.28);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 600px) {
+  .modal {
+    padding: 24px 18px;
+  }
+
+  .tab-btn {
+    font-size: 0.72rem;
+    padding: 7px 15px;
+  }
+}
