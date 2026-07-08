@@ -4,6 +4,18 @@
 - [ ] TinyLLM [View](https://github.com/rosmalai/TinyLLM)
 - [ ] Voice Agent [View](https://github.com/rosmalai/Voice-agent)
 - [ ] Fresh Tomato [View](https://github.com/rosmalai/FreshTomato) _simple ml project_
+- [ ] Battle Arena [View](https://github.com/rosmalai/Battle-Arena) 
+
+***In pipeline*** 
+- [ ] Cosmic Colony Discoverer
+- [ ] AI Sports Coach
+- [ ] Neural Network [View](https://github.com/rosmalai/neural-networks) 
+- [ ] Image Classification
+- [ ] Movie Plot Detective
+- [ ] Treasure Hunter Bot
+- [ ] Implement Model (ResNet, LSTM)
+- [ ] AI Dungeon Roguelike
+- [ ] AI Stand-up Standoff
 
 ***Planned***
 - [ ] RAG over my own notes : *A chatbot that actually know what I read*
