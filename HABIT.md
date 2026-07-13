@@ -24,4 +24,4 @@
 
 - ***Sleep*** *`For me 6hr a day is a good amount`*
 
-- ***Don't compare stats*** *`Compare skill gaph from TIL.md file`*
+- ***Don't compare stats*** *`Compare skill gap from TIL.md file`*
