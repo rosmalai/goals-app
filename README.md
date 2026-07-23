@@ -4,18 +4,20 @@
 - [ ] TinyLLM [View](https://github.com/rosmalai/TinyLLM)
 - [ ] Voice Agent [View](https://github.com/rosmalai/Voice-agent)
 - [ ] Fresh Tomato [View](https://github.com/rosmalai/FreshTomato) _simple ml project_
-- [ ] Battle Arena [View](https://github.com/rosmalai/Battle-Arena) 
+- [ ] Battle Arena [View](https://github.com/rosmalai/Battle-Arena) `#onesem`
 
 ***In pipeline*** 
-- [ ] Cosmic Colony Discoverer
-- [ ] AI Sports Coach
-- [ ] Neural Network [View](https://github.com/rosmalai/neural-networks) 
-- [ ] Image Classification
-- [ ] Movie Plot Detective
-- [ ] Treasure Hunter Bot
-- [ ] Implement Model (ResNet, LSTM)
-- [ ] AI Dungeon Roguelike
-- [ ] AI Stand-up Standoff
+- [ ] Cosmic Colony Discoverer `#onesem`
+- [ ] AI Sports Coach `#onesem`
+- [ ] Neural Network [View](https://github.com/rosmalai/neural-networks) `#onesem` 
+- [ ] Image Classification (CIFAR-10 dataset) `#onesem`
+- [ ] Movie Plot Detective (NLP) `#onesem`
+- [ ] Treasure Hunter Bot (RL) `#onesem`
+- [ ] Implement Model (ResNet, LSTM) 
+- [ ] Cinematography Style Detector (ResNet) `#onesem`
+- [ ] Historical Music Generator (LSTM) `#onesem`
+- [ ] AI Dungeon Roguelike `#onesem`
+- [ ] AI Stand-up Standoff `#onesem`
 
 ***Planned***
 - [ ] RAG over my own notes : *A chatbot that actually know what I read*
