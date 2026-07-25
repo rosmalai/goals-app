@@ -24,3 +24,12 @@
 - [ ] Fine Tune a small LLM _May be mistral or some llama model_
 - [ ] Stock sentiment analysis : *A real pipeline that pulls news headline from a list of stocks, scores each headline with a strong pre-trained finance  model, aggregates the sentimentper ticket per day. Python, NewsAPI for data, FineBERT for the scoring `or may build this from scratch later`*
 - [ ] Build GPT from scratch : Transformer based language model from scratch
+
+***AI Projects***
+- [ ] Terminal Agent - can you reach on top of the terminal benchmark leaderboard ( benchmark with other models )
+- [ ] hermes/clawbot agent - both open source
+- [ ] Slcak + AI - `ex:` [`Buzz`](https://github.com/block/buzz), [`promptql`](https://www.producthunt.com/products/promptql)
+- [ ] Superset + T3.code 
+- [ ] Generative courses to learn anything - `ex:` [`Paradigm`](https://www.paradigm.study/)
+- [ ] Model routing - (choses the right model for you for a task, even block from personal use for in a corporation) `#complex` `#braainstorming` `#realworldproblem` 
+- [ ] Benchmark for specific use case - (Benchmark for TS opensource repos) `#realworldproblem` `#evals`
