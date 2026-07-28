@@ -7,7 +7,10 @@ if (!cached) {
 }
 
 async function getUri() {
-    if (process.env.USE_MEMORY_DB === 'true' && !process.env.VERCEL) {
+    if (
+        process.env.USE_MEMORY_DB === 'true' &&
+        process.env.NODE_ENV !== 'production'
+    ) {
         if (!global.memoryServer) {
             const { MongoMemoryServer } = require('mongodb-memory-server');
             global.memoryServer = await MongoMemoryServer.create();
