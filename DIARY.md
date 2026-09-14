@@ -14,3 +14,13 @@ Doing this c/c++ thing don't know why, for next plan is ...
 - If possible bit of TOC or will  do next day
 
 Hoping I can complete these or atleast do half of them
+
+***15.9.2026***
+
+`Tuesday` `00:01 a.m`
+
+Couldn't even start, I'm so fucked
+
+I really need to think a bit about what I really want to do in life 
+
+This won't go anywhere otherwise
