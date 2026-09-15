@@ -24,3 +24,31 @@ Couldn't even start, I'm so fucked
 I really need to think a bit about what I really want to do in life 
 
 This won't go anywhere otherwise
+
+***15.9.2026***
+
+`Tuesday` `10:05 p.m`
+
+Nothing today
+
+OK so I know what will be my initial languages I want to work with, Those are c, c++, python & SQL
+
+My area of core topic will be database & compiler
+
+Area I want to work now machine learning, deep learning, time series analysis
+
+Want to get a job into machine learning, artificial intelligence or maybe data science
+
+```txt
+  Language:
+  C, C++, Python, SQL
+
+  Core Topics:
+  Database, Compiler
+
+  Area of interest:
+  Machine Learning, Deep Learning, Time Series Analysis
+
+  Job preference:
+  Machine Learning, Artificial Intelligence, Data Analysis
+```
