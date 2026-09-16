@@ -52,3 +52,27 @@ Want to get a job into machine learning, artificial intelligence or maybe data s
   Job preference:
   Machine Learning, Artificial Intelligence, Data Analysis
 ```
+
+***17.9.2026***
+
+`Thusday` `1:12 a.m`
+
+Someone pull me out of this shit 
+
+I need to find how to plan task, will do it with time stamp for tomorrow
+
+```c
+  8:30 - 10:00 a.m ~ math
+
+  10:30 - 12 a.m ~ c(malloc)
+
+  1:30 - 5:00 p.m ~ TOC + compiler PYQ
+
+  6:00 - 8:30 p.m ~ Neural Network revision
+
+  9:00 - 12:00 p.m ~ any project (will decide tomorrow)
+
+  12:01 - 2:00 a.m ~ c project/revision
+```
+
+There is no place for trying I have to follow this, there is no way I can do anything if I don't start to follow this
