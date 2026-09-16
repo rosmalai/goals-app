@@ -64,7 +64,7 @@ I need to find how to plan task, will do it with time stamp for tomorrow
 ```c
   8:30 - 10:00 a.m ~ math
 
-  10:30 - 12 a.m ~ c(malloc)
+  10:30 - 12 a.m ~ c(memory management)
 
   1:30 - 5:00 p.m ~ TOC + compiler PYQ
 
