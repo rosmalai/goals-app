@@ -76,3 +76,25 @@ I need to find how to plan task, will do it with time stamp for tomorrow
 ```
 
 There is no place for trying I have to follow this, there is no way I can do anything if I don't start to follow this
+
+***18.9.2026***
+
+`Friday` `0:01 a.m`
+
+I guess this one is preety good with time
+
+Lost my flow in the end, also need to stop sleeping in morning
+
+Will try this plan for few more days if works well will follow this one
+
+I really need to start coding my projects there are so many planned & I barely have written any code, I have to rearrange all of the projects categorize them with complexity & time, and create a MVP atleast
+
+Also plan my learning(coding) properly or I'll be lost forever need to find what I need to learn first or the prerequisite
+
+`Like I have forgotten ML  or barely have any project on ML, haven't done much deep learning & trying to do AI stuff doing transformer, LLM stuff doing RAG stuff although haven't done much project in them also.`
+
+`so I need to revise some topic, study some topics first before any topic that require that topic, do some project in them then start to move in advance stuff`
+
+I really need to code more, I'm barely writing any code just going through the theory again & again
+
+So I'm structuring my projects & topics in [***PROJECTS.md***](PROJECTS.md)
