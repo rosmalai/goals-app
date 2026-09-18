@@ -98,3 +98,7 @@ Also plan my learning(coding) properly or I'll be lost forever need to find what
 I really need to code more, I'm barely writing any code just going through the theory again & again
 
 So I'm structuring my projects & topics in [***PROJECTS.md***](PROJECTS.md)
+
+***19.9.2026***
+
+`Saturday` `00:48  a.m`
