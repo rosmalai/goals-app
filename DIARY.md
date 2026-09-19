@@ -101,4 +101,12 @@ So I'm structuring my projects & topics in [***PROJECTS.md***](PROJECTS.md)
 
 ***19.9.2026***
 
-`Saturday` `00:48  a.m`
+`Saturday` `11:08  p.m`
+
+I think there is no issue with the plannig of task with time stamp, I just need to be not lazy
+
+Finding it so hard to code by myself, I can't even make my mind what I want to code ml, web, system eng or what 
+
+Also need to plan with time I have just pasted the same task again & again also should make compo in the task if needed do some with longer duration 
+
+I just need the flow I'm lacking
