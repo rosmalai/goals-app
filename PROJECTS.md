@@ -49,9 +49,24 @@ Using `#planned`, `#ongithub`, `#unfinished` & `#finished`
 
 ### [***Flood forecasting pipeline with multiple model***](https://app.notion.com/p/Flood-forecasting-pipeline-with-multiple-model-3b3906cd4e3d80d5a889d6fcf1e1fd80?source=copy_link)
 
+### [***List***](https://github.com/rosmalai/goals-app/blob/main/README.md)
 
-
+  - [ ] [***Cosmic Colony Discoverer***]()
+  - [ ] [***AI Sports Coach***]()
+  - [ ] [***Image Classification (CIFAR-10 dataset)***]()
+  - [ ] [***Plot Detective (NLP)***]()
+  - [ ] [***Treasure Hunter Bot (RL)***]() 
+  - [ ] [***Implement Model (ResNet, LSTM)***]() 
+  - [ ] [***Cinematography Style Detector (ResNet)***]() 
+  - [ ] [***Historical Music Generator (LSTM)***]()
+  - [ ] [***AI Dungeon Roguelike***]()
+  - [ ] [***AI Stand-up Standoff***]()
   
+### [***AI Dungeon Roguelike***](https://app.notion.com/p/AI-Dungeon-Roguelike-374906cd4e3d805391fad2938e10f82c?source=copy_link)
+
+### [***AI Stand-up Standoff***](https://app.notion.com/p/AI-Stand-up-Standoff-374906cd4e3d808ca688f4091a85b651?source=copy_link)
+
+
 
 ## **AI**
 
@@ -75,9 +90,39 @@ Using `#planned`, `#ongithub`, `#unfinished` & `#finished`
   
   *train a small model using youtube video transcript to predict next token*
 
-### [***]
+### [***tinyGrad***](https://github.com/rosmalai/tinygrad) 
+  `#ongithub`
+  
+  *A backpropagation engine*
 
-### [***]
+### [***Neural network***](https://github.com/rosmalai/neural-networks)
+  `#ongithub`
+  
+  *a feedforward neural network using no libraries (numpy or pytorch)*
+
+### [***tinyMemory***](https://github.com/rosmalai/tinyMemory)
+  `#ongithub` `#finished`
+  
+  *Understanding memory for AI Agents*
+  
+### [***List***](https://github.com/rosmalai/goals-app/blob/main/README.md)
+  
+  ***Planned***
+  - [ ] RAG over my own notes : *A chatbot that actually know what I read*
+  - [ ] Fine Tune a small LLM _May be mistral or some llama model_
+  - [ ] Stock sentiment analysis : *A real pipeline that pulls news headline from a list of stocks, scores each headline with a strong pre-trained finance  model, aggregates the sentimentper ticket per day. Python, NewsAPI for data, FineBERT for the scoring `or may build this from scratch later`*
+  - [ ] Build GPT from scratch : Transformer based language model from scratch
+  
+  ***AI Projects***
+  - [ ] Terminal Agent - can you reach on top of the terminal benchmark leaderboard ( benchmark with other models )
+  - [ ] hermes/clawbot agent - both open source
+  - [ ] Slcak + AI - `ex:` [`Buzz`](https://github.com/block/buzz), [`promptql`](https://www.producthunt.com/products/promptql)
+  - [ ] Superset + T3.code 
+  - [ ] Generative courses to learn anything - `ex:` [`Paradigm`](https://www.paradigm.study/)
+  - [ ] Model routing - (choses the right model for you for a task, even block from personal use for in a corporation) `#complex` `#braainstorming` `#realworldproblem` 
+  - [ ] Benchmark for specific use case - (Benchmark for TS opensource repos) `#realworldproblem` `#evals`
+
+ 
 
 
 ## ***Python***
@@ -115,20 +160,7 @@ Using `#planned`, `#ongithub`, `#unfinished` & `#finished`
 
 
 
-### [***tinyGrad***](https://github.com/rosmalai/tinygrad) 
-  `#ongithub`
-  
-  *A backpropagation engine*
 
-### [***Neural network](https://github.com/rosmalai/neural-networks)
-  `#ongithub`
-  
-  *a feedforward neural network using no libraries (numpy or pytorch)*
-
-### [***tinyMemory***](https://github.com/rosmalai/tinyMemory)
-  `#ongithub` `#finished`
-  
-  *Understanding memory for AI Agents*
 
 ### 
 
@@ -155,7 +187,7 @@ Using `#planned`, `#ongithub`, `#unfinished` & `#finished`
   
   Following the book [Tiny C Projects](https://www.oreilly.com/library/view/tiny-c-projects/9781633439825/)
 
-### [***Chat app](https://github.com/rosmalai/chat_app)
+### [***Chat app***](https://github.com/rosmalai/chat_app)
   `#ongithub`
   
   *Socket Chat App (TCP Client–Server in C/C++)*
@@ -179,4 +211,4 @@ Using `#planned`, `#ongithub`, `#unfinished` & `#finished`
   
   *take a snapshot from an image or video to extract the text from that frame*
 
-###
+### [***Generate prompt for no slop webpage***](https://app.notion.com/p/Generate-prompt-for-no-slop-webpage-3b3906cd4e3d80b59f35cadfa7feb98d?source=copy_link)
