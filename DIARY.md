@@ -110,3 +110,23 @@ Finding it so hard to code by myself, I can't even make my mind what I want to c
 Also need to plan with time I have just pasted the same task again & again also should make compo in the task if needed do some with longer duration 
 
 I just need the flow I'm lacking
+
+***23.9.2026***
+
+`Wednesday` `1:09 a.m`
+
+Here I'm taking oath 
+```txt
+I'm not gonna watch movies anymore after september ends until I land a job. It's a 30 days month
+
+Not gonna scrolling instagram from now
+
+Not gonna watch or think about any bullshit on tweeter
+
+And no any porn after September
+
+I need to lock in or I'm fucked, saying this shit again & again for a long time it's really the last time or I'm dead
+
+So fuck motivation fuck procrastination fuck tutorial hell fuck everyone
+```
+
