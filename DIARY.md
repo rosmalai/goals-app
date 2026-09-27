@@ -130,3 +130,13 @@ I need to lock in or I'm fucked, saying this shit again & again for a long time 
 So fuck motivation fuck procrastination fuck tutorial hell fuck everyone
 ```
 
+
+***28.9.2026***
+
+`Monday` `12:44 a.m`
+
+I need to start reading books again. 
+
+This is not procrastination anymore I legit forgot how to read, this is scarier than I can imagine 
+
+I am legit a dead body right now no aspiration, no motivation no energy to study. Same routine everyday feels like I'm stuck in the same day but the time is moving in simple words I'm dead 
